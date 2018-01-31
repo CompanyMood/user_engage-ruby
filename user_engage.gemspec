@@ -6,12 +6,12 @@ require "user_engage/version"
 Gem::Specification.new do |spec|
   spec.name          = "user_engage"
   spec.version       = UserEngage::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
+  spec.authors       = ["Markus Schwed"]
+  spec.email         = ["markus@company-mood.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ruby bindings for the UserEngage API}
+  spec.description   = %q{UserEngage (https://userengage.com) - Keep things simple with a single platform for all your messaging and relationships with customers.}
+  spec.homepage      = "https://github.com/CompanyMood/user_engage-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
