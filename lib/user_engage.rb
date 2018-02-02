@@ -1,5 +1,6 @@
-require 'user_engage/version'
+require 'user_engage/client'
 require 'user_engage/configuration'
+require 'user_engage/version'
 
 module UserEngage
   def self.configuration
@@ -8,5 +9,9 @@ module UserEngage
 
   def self.config
     yield(configuration)
+  end
+
+  def self.client
+    Client.new(configuration)
   end
 end

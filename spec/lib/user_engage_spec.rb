@@ -4,10 +4,18 @@ RSpec.describe UserEngage do
   end
 
   it 'is possible to configure UserEngage' do
-    UserEngage.config do |config|
+    described_class.config do |config|
       config.token = 'XXX'
     end
 
-    expect(UserEngage.configuration.token).to eq('XXX')
+    expect(described_class.configuration.token).to eq('XXX')
   end
+
+  describe '#client' do
+    subject { described_class.client }
+
+    it 'returns a client object' do
+      expect(subject).to be_a(UserEngage::Client)
+    end
+  end # describe '#client'
 end

@@ -1,2 +1,9 @@
 Style/Documentation:
   Enabled: false
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
