@@ -1,6 +1,5 @@
 module UserEngage
   class Client
-
     ######################
     ## Instance methods ##
     ######################

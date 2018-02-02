@@ -1,5 +1,5 @@
-require "user_engage/version"
-require "user_engage/configuration"
+require 'user_engage/version'
+require 'user_engage/configuration'
 
 module UserEngage
   def self.configuration
