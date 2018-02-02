@@ -1,4 +1,4 @@
-# UserEngage
+# UserEngage - NOT READY YET!
 
 This gem implements the ruby bindings for https://userengage.com.
 

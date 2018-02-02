@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Markus Schwed"]
   spec.email         = ["markus@company-mood.com"]
 
-  spec.summary       = %q{Ruby bindings for the UserEngage API}
+  spec.summary       = %q{NOT READY YET!! - Ruby bindings for the UserEngage API}
   spec.description   = %q{UserEngage (https://userengage.com) - Keep things simple with a single platform for all your messaging and relationships with customers.}
   spec.homepage      = "https://github.com/CompanyMood/user_engage-ruby"
   spec.license       = "MIT"
