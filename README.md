@@ -1,4 +1,4 @@
-# UserEngage - NOT READY YET!
+# UserEngage - NOT READY YET! [![Build Status](https://travis-ci.org/CompanyMood/user_engage-ruby.svg?branch=master)](https://travis-ci.org/CompanyMood/user_engage-ruby)
 
 This gem implements the ruby bindings for https://userengage.com.
 
