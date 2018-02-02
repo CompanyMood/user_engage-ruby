@@ -18,9 +18,18 @@ Or install it yourself as:
 
     $ gem install user_engage
 
-## Usage
+## Basic Usage
 
-TODO: Write usage instructions here
+First, setup your UserEngage configuration. 
+Get yourself an API access token [here](https://app.userengage.com/api/YVSXSB/credentials/) and set it like
+
+```ruby
+UserEngage.config do |config|
+  config.token = '<your-access-token-here>'
+end
+```
+
+NOTE: It's important to have access to the UserEngage API package.
 
 ## Development
 
