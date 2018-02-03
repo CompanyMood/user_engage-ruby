@@ -2,10 +2,10 @@
 ## Users
 * [ ] Create user
 * [ ] Update user
-* [ ] Find user by email
-* [ ] Find user by key
-* [ ] Find user by phone number
-* [ ] Find user by date
+* [x] Find user by email
+* [x] Find user by key
+* [x] Find user by phone number
+* [x] Find user by date
 * [ ] Delete user
 * [ ] Filter users by custom attribute
 * [ ] Get single user details
