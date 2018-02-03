@@ -3,7 +3,7 @@ require 'user_engage/errors'
 module UserEngage
   module Operation
     module Find
-      def find(params={})
+      def find(params = {})
         check_for_unsupported_params!(params)
         attributes = get_resource(params)
         new(attributes)
@@ -18,23 +18,25 @@ module UserEngage
         path = "/#{resource_name}/search/"
         response = UserEngage.client.get(path, params)
         check_for_existing_resource!(response, params)
-        JSON.parse(response.body)
+        JSON.parse(response.body, symbolize_names: true)
       end
 
       def check_for_existing_resource!(response, params)
-        fail UserEngage::ResourceNotFoundException.new(
+        return if response.status == 200
+        raise(
+          UserEngage::ResourceNotFoundException,
           "No resource with {#{params.inspect} found!}"
-        ) unless response.status == 200
+        )
       end
 
       def check_for_unsupported_params!(params)
         unsupported_params = params.keys - supported_find_params
+        return if unsupported_params.size.zero?
 
-        if unsupported_params.size > 0
-          fail UserEngage::InvalidFindAttributeException.new(
-            "Unsupported parameter/s used: #{unsupported_params.join(', ')}"
-          )
-        end
+        raise(
+          UserEngage::InvalidFindAttributeException,
+          "Unsupported parameter/s used: #{unsupported_params.join(', ')}"
+        )
       end
     end
   end

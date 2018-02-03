@@ -4,6 +4,9 @@ Style/Documentation:
 Style/CommentedKeyword:
   Enabled: false
 
+Style/NumericLiterals:
+  Enabled: false
+
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'

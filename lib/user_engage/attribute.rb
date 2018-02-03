@@ -5,6 +5,10 @@ module UserEngage
     ################
     ## Attributes ##
     ################
-    attr_accessor :name_std, :name, :value, :id, :description
+    attribute :description, Types::String
+    attribute :id, Types::Int
+    attribute :name_std, Types::String
+    attribute :name, Types::String
+    attribute :value, Types::Any
   end
 end

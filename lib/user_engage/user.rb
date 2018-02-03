@@ -15,40 +15,49 @@ module UserEngage
     ################
     ## Attributes ##
     ################
-    attr_accessor :facebook_url, :region, :notifications, :last_ip, :country,
-      :resolution, :name, :browser_language, :email, :os_type, :created_at,
-      :unsubscribed, :timezone, :gravatar_url, :chat_id, :browser, :key,
-      :id, :updated_at, :score, :google_url, :city, :first_seen, :status,
-      :gender, :linkedin_url, :twitter_url, :last_contacted, :phone_number,
-      :last_seen, :page_views, :user_id
-
-    attr_reader :lists, :attributes, :tags
-
-    def attributes=(attributes_array)
-      @attributes = attributes_array.collect do |data|
-        UserEngage::Attribute.new(data)
-      end
-    end
-
-    def lists=(lists_array)
-      @lists = lists_array.collect do |data|
-        UserEngage::List.new(data)
-      end
-    end
-
-    def tags=(tags_array)
-      @tags = tags_array.collect do |data|
-        UserEngage::Tag.new(data)
-      end
-    end
+    attribute :attributes, Types::Array.of(UserEngage::Attribute)
+    attribute :browser, Types::String
+    attribute :browser_language, Types::String
+    attribute :chat_id, Types::Int
+    attribute :city, Types::String
+    attribute :country, Types::String
+    attribute :created_at, Types::DateTime
+    attribute :email, Types::String
+    attribute :facebook_url, Types::String
+    attribute :first_seen, Types::DateTime
+    attribute :gender, Types::String
+    attribute :google_url, Types::String
+    attribute :gravatar_url, Types::String
+    attribute :id, Types::Int
+    attribute :key, Types::String
+    attribute :last_contacted, Types::DateTime
+    attribute :last_ip, Types::String
+    attribute :last_seen, Types::DateTime
+    attribute :linkedin_url, Types::String
+    attribute :lists, Types::Array.of(UserEngage::List)
+    attribute :name, Types::String
+    attribute :notifications, Types::Bool
+    attribute :os_type, Types::String
+    attribute :page_views, Types::Int
+    attribute :phone_number, Types::String
+    attribute :region, Types::String
+    attribute :resolution, Types::String
+    attribute :score, Types::Int
+    attribute :status, Types::String
+    attribute :tags, Types::Array.of(UserEngage::Tag)
+    attribute :timezone, Types::String
+    attribute :twitter_url, Types::String
+    attribute :unsubscribed, Types::Bool
+    attribute :updated_at, Types::DateTime
+    attribute :user_id, Types::Any
 
     #####################
     ## Private methods ##
     #####################
-    private
+    private_class_method
 
     def self.supported_find_params
-      %i{email key phone_number date}
+      %i[email key phone_number date]
     end
 
     def self.resource_name

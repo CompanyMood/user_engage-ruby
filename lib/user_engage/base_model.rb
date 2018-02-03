@@ -1,12 +1,11 @@
+require 'dry-struct'
+
 module UserEngage
-  class BaseModel
-    ######################
-    ## Instance methods ##
-    ######################
-    def initialize(attributes)
-      attributes.each_pair do |k,v|
-        public_send("#{k}=", v)
-      end
+  class BaseModel < Dry::Struct
+    module Types
+      include Dry::Types.module
     end
+
+    constructor_type :schema
   end
 end
