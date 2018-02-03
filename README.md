@@ -20,6 +20,8 @@ Or install it yourself as:
 
 ## Basic Usage
 
+NOTE: It's important to have access to the UserEngage API package.
+
 First, setup your UserEngage configuration. 
 Get yourself an API access token [here](https://app.userengage.com/api/YVSXSB/credentials/) and set it like
 
@@ -29,7 +31,16 @@ UserEngage.config do |config|
 end
 ```
 
-NOTE: It's important to have access to the UserEngage API package.
+Then query models or delete them like
+
+```ruby
+user = UserEngage::User.find(email: 'markus@company-mood.com')
+# => <#UserEngage::User id:12345 email:...>
+
+user.destroy
+# => true
+```
+
 
 ## Development
 
