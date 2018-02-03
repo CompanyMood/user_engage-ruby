@@ -43,8 +43,23 @@ RSpec.describe UserEngage::Client do
     end # describe '#put'
 
     describe '#delete' do
-      pending
-      it 'DELETE to public api with given path and parameters'
+      before do
+        stub_request(:delete, 'https://app.userengage.com/api/public/users/1/')
+        subject.delete('/users/1/')
+      end
+
+      it 'DELETE to public api with given path' do
+        expect(WebMock).to have_requested(
+          :delete,
+          'https://app.userengage.com/api/public/users/1/'
+        ).with(
+          headers: {
+            Authorization: "Token #{token}",
+            'Content-Type' => 'application/json',
+            'User-Agent' => "UserEngage-Ruby/#{UserEngage::VERSION}"
+          }
+        ).once
+      end
     end # describe '#delete'
   end # describe 'instance methods'
 end

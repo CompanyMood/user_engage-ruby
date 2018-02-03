@@ -25,7 +25,7 @@ module UserEngage
         return if response.status == 200
         raise(
           UserEngage::ResourceNotFoundException,
-          "No resource with {#{params.inspect} found!}"
+          "No resource with {#{params.inspect}} found!"
         )
       end
 

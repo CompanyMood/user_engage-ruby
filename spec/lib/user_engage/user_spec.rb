@@ -63,4 +63,23 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
       end
     end # context 'with an invalid attribute'
   end # describe '#find
+
+  describe '#destroy' do
+    context 'with a not existing user' do
+      let(:user) { described_class.new(id: 99922211) }
+
+      it 'raises an NotExistingResourceException' do
+        expect { user.destroy }
+          .to raise_error(UserEngage::NotExistingResourceException)
+      end
+    end # context 'with a not existing user'
+
+    context 'with an existing user' do
+      let(:user) { described_class.new(id: 68567127) }
+
+      it 'deletes the user at UserEngage' do
+        expect(user.destroy).to be_truthy
+      end
+    end # context 'with an existing user'
+  end # describe '#destroy'
 end

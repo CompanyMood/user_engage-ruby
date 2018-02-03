@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://app.userengage.com/api/public/users/99922211/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - UserEngage-Ruby/0.0.1
+      Authorization:
+      - Token <my-test-token>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sat, 03 Feb 2018 20:17:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '23'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db04bee2df11086fa3a8d38b922e38ec21517689034; expires=Sun, 03-Feb-19
+        20:17:14 GMT; path=/; domain=.userengage.com; HttpOnly
+      Allow:
+      - GET, PUT, PATCH, DELETE, OPTIONS
+      Vary:
+      - Cookie
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e7812941b4a96b8-FRA
+    body:
+      encoding: UTF-8
+      string: '{"detail":"Not found."}'
+    http_version: 
+  recorded_at: Sat, 03 Feb 2018 20:17:05 GMT
+recorded_with: VCR 4.0.0

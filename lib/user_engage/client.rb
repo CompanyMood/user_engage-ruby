@@ -15,6 +15,12 @@ module UserEngage
       request(:get, path, parameters)
     end
 
+    # Public: Calls the base_url with the given path and parameters
+    #
+    def delete(path)
+      request(:delete, path)
+    end
+
     #####################
     ## Private methods ##
     #####################
@@ -24,7 +30,7 @@ module UserEngage
       Faraday.new(url: host)
     end
 
-    def request(method, action_path, parameters)
+    def request(method, action_path, parameters = nil)
       path = "api/public#{action_path}"
       connection.public_send(method, path, parameters) do |request|
         request.headers['Authorization'] = "Token #{@configuration.token}"

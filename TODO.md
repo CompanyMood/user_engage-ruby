@@ -6,7 +6,7 @@
 * [x] Find user by key
 * [x] Find user by phone number
 * [x] Find user by date
-* [ ] Delete user
+* [x] Delete user
 * [ ] Filter users by custom attribute
 * [ ] Get single user details
 * [ ] Get all users details
