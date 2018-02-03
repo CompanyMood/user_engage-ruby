@@ -2,7 +2,8 @@ require 'user_engage/client'
 
 RSpec.describe UserEngage::Client do
   describe 'instance methods' do
-    let(:token) { 'TestToken' }
+    let(:token) { ENV.fetch('USERENGAGE_API_TOKEN') }
+
     let(:configuration) do
       UserEngage::Configuration.new.tap do |config|
         config.token = token

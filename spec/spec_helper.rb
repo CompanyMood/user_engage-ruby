@@ -1,4 +1,5 @@
 require 'bundler/setup'
+require 'dotenv/load'
 require 'user_engage'
 require 'vcr'
 require 'webmock/rspec'
@@ -7,6 +8,9 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.filter_sensitive_data('<my-test-token>') do
+    ENV.fetch('USERENGAGE_API_TOKEN')
+  end
 end
 
 RSpec.configure do |config|

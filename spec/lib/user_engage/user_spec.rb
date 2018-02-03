@@ -1,9 +1,11 @@
 require 'user_engage/user'
 
 RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
+  let(:token) { ENV.fetch('USERENGAGE_API_TOKEN') }
+
   before do
     UserEngage.config do |config|
-      config.token = '<my-test-token>'
+      config.token = token
     end
   end
 
