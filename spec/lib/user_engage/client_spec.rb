@@ -1,5 +1,3 @@
-require 'user_engage/client'
-
 RSpec.describe UserEngage::Client do
   describe 'instance methods' do
     let(:token) { ENV.fetch('USERENGAGE_API_TOKEN') }
