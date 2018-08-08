@@ -5,6 +5,8 @@ module UserEngage
     ################
     ## Attributes ##
     ################
-    attr_accessor :id, :name, :description
+    attribute :id, Types::Integer
+    attribute :name, Types::String
+    attribute :description, Types::String
   end
 end

@@ -20,7 +20,7 @@ module UserEngage
     attribute :attributes, Types::Array.of(UserEngage::Attribute)
     attribute :browser, Types::String
     attribute :browser_language, Types::String
-    attribute :chat_id, Types::Int
+    attribute :chat_id, Types::Integer
     attribute :city, Types::String
     attribute :country, Types::String
     attribute :created_at, Types::DateTime
@@ -30,7 +30,7 @@ module UserEngage
     attribute :gender, Types::String
     attribute :google_url, Types::String
     attribute :gravatar_url, Types::String
-    attribute :id, Types::Int
+    attribute :id, Types::Integer
     attribute :key, Types::String
     attribute :last_contacted, Types::DateTime
     attribute :last_ip, Types::String
@@ -40,11 +40,11 @@ module UserEngage
     attribute :name, Types::String
     attribute :notifications, Types::Bool
     attribute :os_type, Types::String
-    attribute :page_views, Types::Int
+    attribute :page_views, Types::Integer
     attribute :phone_number, Types::String
     attribute :region, Types::String
     attribute :resolution, Types::String
-    attribute :score, Types::Int
+    attribute :score, Types::Integer
     attribute :status, Types::String
     attribute :tags, Types::Array.of(UserEngage::Tag)
     attribute :timezone, Types::String

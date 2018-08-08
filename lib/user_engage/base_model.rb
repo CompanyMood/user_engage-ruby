@@ -6,6 +6,8 @@ module UserEngage
       include Dry::Types.module
     end
 
-    constructor_type :schema
+    transform_types do |type|
+      type.meta(omittable: true)
+    end
   end
 end
