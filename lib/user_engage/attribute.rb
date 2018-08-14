@@ -6,7 +6,7 @@ module UserEngage
     ## Attributes ##
     ################
     attribute :description, Types::String
-    attribute :id, Types::Int
+    attribute :id, Types::Integer
     attribute :name_std, Types::String
     attribute :name, Types::String
     attribute :value, Types::Any

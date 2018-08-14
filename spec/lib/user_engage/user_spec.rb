@@ -20,9 +20,10 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
       end
 
       it 'sets the correct attributes' do
-        attribute = subject.attributes.first
+        attribute = subject.attributes[:attributes].first
         expect(attribute).to be_a(UserEngage::Attribute)
         expect(attribute.id).to eq(286104)
+
         expect(attribute.name).to eq('created_at')
         expect(attribute.name_std).to eq('created_at')
         expect(attribute.value).to eq('2015-03-13 11:45:35')
