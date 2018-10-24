@@ -22,6 +22,14 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
       subject { described_class.find(72130530) }
 
       include_examples 'valid user find request'
+
+      it 'sets the correct tags' do
+        company = subject.companies.first
+        expect(company).to be_a(UserEngage::Company)
+        expect(company.name).to eq('CompanyMood')
+        expect(company.member_since).to eq('2018-01-25T14:30:15.435527Z')
+        expect(company.id).to eq(120378)
+      end
     end # context 'with a valid find attribute'
 
     context 'with a not existing user for the given attribute' do
