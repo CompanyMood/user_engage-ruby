@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'user_engage/errors'
 
 module UserEngage
@@ -20,6 +22,7 @@ module UserEngage
 
       def check_for_success!(response)
         return true if response.status == 204
+
         raise(
           UserEngage::NotExistingResourceException,
           "No resource with ID: #{id} found!"

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'support/shared_examples/user_examples'
 
 RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'user_engage/client'
 require 'user_engage/configuration'
 require 'user_engage/version'

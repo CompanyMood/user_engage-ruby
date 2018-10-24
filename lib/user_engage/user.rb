@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'user_engage/base_model'
 require 'user_engage/operation/find'
 require 'user_engage/operation/destroy'
@@ -63,9 +65,7 @@ module UserEngage
     #####################
     ## Private methods ##
     #####################
-    private_class_method
-
-    def self.supported_find_params
+    private_class_method def self.supported_find_params
       %i[email key phone_number date]
     end
   end

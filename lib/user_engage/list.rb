@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'user_engage/base_model'
 
 module UserEngage
