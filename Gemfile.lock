@@ -92,7 +92,7 @@ DEPENDENCIES
   dotenv (~> 2.2)
   rake (~> 10.0)
   rspec (~> 3.0)
-  rubocop (~> 0.52)
+  rubocop (~> 0.59)
   user_engage!
   vcr (~> 4.0)
   webmock (~> 3.3)
