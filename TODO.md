@@ -8,7 +8,7 @@
 * [x] Find user by date
 * [x] Delete user
 * [ ] Filter users by custom attribute
-* [ ] Get single user details
+* [x] Get single user details
 * [ ] Get all users details
 * [ ] Get user segments
 * [ ] Add tag
@@ -42,8 +42,8 @@
 ## CRM
 * [ ] Create company
 * [ ] Update company
-* [ ] Delete company
-* [ ] Get company
+* [x] Delete company
+* [x] Get company
 * [ ] Get all companies
 * [ ] Set attribute
 * [ ] Set multiple attributes
