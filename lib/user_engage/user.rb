@@ -53,6 +53,13 @@ module UserEngage
     attribute :updated_at, Types::DateTime
     attribute :user_id, Types::Any
 
+    ###################
+    ## Class methods ##
+    ###################
+    def self.resource_name
+      'users'
+    end
+
     #####################
     ## Private methods ##
     #####################
@@ -60,10 +67,6 @@ module UserEngage
 
     def self.supported_find_params
       %i[email key phone_number date]
-    end
-
-    def self.resource_name
-      'users'.freeze
     end
   end
 end

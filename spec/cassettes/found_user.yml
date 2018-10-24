@@ -47,11 +47,68 @@ http_interactions:
       - 3e708fb13f23649f-FRA
     body:
       encoding: ASCII-8BIT
-      string: '{"id":2913134,"key":"KSnAlOuWa","name":"Markus Schwed","email":"markus@company-mood.com","gender":"unknown","status":"user","phone_number":null,"first_seen":"2018-01-25T13:34:31.978138Z","last_seen":"2018-02-02T18:02:22.051644Z","page_views":49,"last_ip":"91.62.63.111","timezone":"Europe/Berlin","city":null,"region":null,"country":"Germany","unsubscribed":false,"browser_language":"en","score":0,"browser":"Firefox","os_type":"Mac
+      string: '{"id":72130530,"key":"KSnAlOuWa","name":"Markus Schwed","email":"markus@company-mood.com","gender":"unknown","status":"user","phone_number":null,"first_seen":"2018-01-25T13:34:31.978138Z","last_seen":"2018-02-02T18:02:22.051644Z","page_views":49,"last_ip":"91.62.63.111","timezone":"Europe/Berlin","city":null,"region":null,"country":"Germany","unsubscribed":false,"browser_language":"en","score":0,"browser":"Firefox","os_type":"Mac
         OS X","resolution":"1920x1080","created_at":"2018-01-25T13:34:31.987595Z","updated_at":"2018-02-02T18:02:22.087045Z","attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
-        11:45:35","id":286104,"description":"When has that user been created? (Self
-        or invited)"},{"name_std":"company_admin","name":"company_admin","value":"True","id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General list","description":"A first list"}],"tags":[{"name":"CompanyMood team member", "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"chat_id":"Chat
+        11:45:35","id":286115,"description":"When has that user been created? (Self
+        or invited)"},{"name_std":"company_admin","name":"company_admin","value":"True","id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
+        list","description":"A first list"}],"tags":[{"name":"CompanyMood team member",
+        "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"chat_id":"Chat
         ID is deprecated and will be removed in future","last_contacted":"2018-01-29T12:51:45.079079Z","user_id":"26477314-a2e7-480f-438a-4de724267d21"}'
     http_version: 
   recorded_at: Fri, 02 Feb 2018 22:24:33 GMT
+- request:
+    method: get
+    uri: https://app.userengage.com/api/public/users/72130530/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - UserEngage-Ruby/0.0.6
+      Authorization:
+      - Token <my-test-token>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 24 Oct 2018 13:37:40 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d808ce294bf61180e89767eaee5c3d38d1540388260; expires=Thu, 24-Oct-19
+        13:37:40 GMT; path=/; domain=.userengage.com; HttpOnly
+      Allow:
+      - GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Cookie
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 46ecd6e15bac64ab-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":72130530,"key":"gpHcuWmhu4eT","name":"Markus Schwed","email":"markus@company-mood.com","gender":"unknown","status":"user","phone_number":null,"first_seen":"2018-02-09T10:42:13.956452Z","last_seen":"2018-10-24T13:28:59.264665Z","page_views":1191,"last_ip":"91.67.113.209","timezone":"Europe/Kaliningrad","city":"Alzey","region":"Rheinland-Pfalz","country":"Germany","unsubscribed":false,"browser_language":"de","score":0,"browser":"Firefox","os_type":"Windows
+        10","resolution":"1920x1080","created_at":"2018-02-09T10:42:13.979719Z","updated_at":"2018-10-24T13:28:59.269436Z","companies":[{"member_since":"2018-01-25T14:30:15.435527Z","id":120378,"name":"CompanyMood"}],"attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
+        11:45:35","id":286115,"description":"When has that user been created? (Self
+        or invited)"},{"name_std":"company_admin","name":"company_admin","value":"True","id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
+        list","description":"A first list"}],"gravatar_url":null,"tags":[{"name":"CompanyMood team member",
+        "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}'
+    http_version: 
+  recorded_at: Wed, 24 Oct 2018 13:37:38 GMT
 recorded_with: VCR 4.0.0
