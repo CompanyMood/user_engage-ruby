@@ -11,7 +11,7 @@ module UserEngage
 
     # Public: Calls the base_url with the given path and parameters
     #
-    def get(path, parameters)
+    def get(path, parameters={})
       request(:get, path, parameters)
     end
 
