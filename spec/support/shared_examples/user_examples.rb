@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.shared_examples 'valid user find request' do
   it 'returns an UserEngage::User object' do
     expect(subject).to be_a(UserEngage::User)

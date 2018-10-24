@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe UserEngage do
   let(:token) { ENV.fetch('USERENGAGE_API_TOKEN') }
 

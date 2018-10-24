@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'faraday'
 
 module UserEngage
@@ -11,7 +13,7 @@ module UserEngage
 
     # Public: Calls the base_url with the given path and parameters
     #
-    def get(path, parameters={})
+    def get(path, parameters = {})
       request(:get, path, parameters)
     end
 
@@ -40,7 +42,7 @@ module UserEngage
     end
 
     def host
-      'https://app.userengage.com/'.freeze
+      'https://app.userengage.com/'
     end
   end
 end

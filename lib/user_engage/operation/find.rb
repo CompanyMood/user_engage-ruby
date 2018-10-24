@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'user_engage/errors'
 
 module UserEngage
@@ -37,6 +39,7 @@ module UserEngage
 
       def check_for_existing_resource!(response, params)
         return if response.status == 200
+
         raise(
           UserEngage::ResourceNotFoundException,
           "No resource with {#{params.inspect}} found!"
@@ -45,7 +48,7 @@ module UserEngage
 
       def check_for_unsupported_params!(params)
         if params.is_a?(Integer)
-          return true
+          true
         else
           unsupported_params = params.keys - supported_find_params
           return if unsupported_params.size.zero?
