@@ -14,7 +14,7 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
   describe '#all' do
     subject { described_class.all }
 
-    context 'with an successful request', vcr: { cassette_name: :found_all } do
+    context 'with a successful request', vcr: { cassette_name: :found_all } do
       it 'should return a resource collection' do
         expect(subject).to be_a(UserEngage::ResourceCollection)
       end
