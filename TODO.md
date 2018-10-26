@@ -9,7 +9,7 @@
 * [x] Delete user
 * [ ] Filter users by custom attribute
 * [x] Get single user details
-* [ ] Get all users details
+* [x] Get all users details
 * [ ] Get user segments
 * [ ] Add tag
 * [ ] Remove tag
@@ -44,7 +44,7 @@
 * [ ] Update company
 * [x] Delete company
 * [x] Get company
-* [ ] Get all companies
+* [x] Get all companies
 * [ ] Set attribute
 * [ ] Set multiple attributes
 * [ ] Update company using company ID
