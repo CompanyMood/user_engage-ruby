@@ -49,7 +49,7 @@ RSpec.describe UserEngage::ResourceCollection, vcr: { record: :new_episodes } do
       context 'there are more pages (previous link is present)' do
         before { subject.go_next! } # Setup to be on the page 2 already
 
-        it 'should increment current page' do
+        it 'should decrease current page' do
           expect { subject.go_previous! }
             .to change { subject.current_page }.from(2).to(1)
         end
