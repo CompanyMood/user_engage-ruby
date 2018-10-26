@@ -62,7 +62,7 @@ RSpec.describe UserEngage::ResourceCollection, vcr: { record: :new_episodes } do
       end # context 'there are more pages (previous link is present)'
     end # describe '#go_previous!'
 
-    fdescribe '#each' do
+    describe '#each' do
       it 'should iterate through all results (even next pages)' do
         expect do |block|
           subject.each(&block)
