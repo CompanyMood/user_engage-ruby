@@ -3,17 +3,9 @@
 require 'bundler/setup'
 require 'dotenv/load'
 require 'user_engage'
-require 'vcr'
 require 'webmock/rspec'
 
-VCR.configure do |c|
-  c.cassette_library_dir = 'spec/cassettes'
-  c.hook_into :webmock
-  c.configure_rspec_metadata!
-  c.filter_sensitive_data('<my-test-token>') do
-    ENV.fetch('USERENGAGE_API_TOKEN')
-  end
-end
+require 'support/vcr_config'
 
 RSpec.configure do |config|
   # Disable RSpec exposing methods globally on `Module` and `main`

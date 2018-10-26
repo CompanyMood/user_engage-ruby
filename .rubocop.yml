@@ -1,15 +1,19 @@
 AllCops:
   TargetRubyVersion: 2.5.1
 
-Style/Documentation:
-  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'user_engage.gemspec'
 
 Style/CommentedKeyword:
   Enabled: false
 
-Style/NumericLiterals:
+Style/Documentation:
   Enabled: false
 
-Metrics/BlockLength:
-  Exclude:
-    - 'spec/**/*'
+Style/MultilineTernaryOperator:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
