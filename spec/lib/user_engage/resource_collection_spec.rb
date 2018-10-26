@@ -59,7 +59,7 @@ RSpec.describe UserEngage::ResourceCollection, vcr: { record: :new_episodes } do
           subject.go_previous!
           expect(subject.results.first.id).to eq(111)
         end
-      end # context 'there are more pages (next link is present)'
+      end # context 'there are more pages (previous link is present)'
     end # describe '#go_previous!'
 
     fdescribe '#each' do
