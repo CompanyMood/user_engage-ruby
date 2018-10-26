@@ -91,7 +91,7 @@ module UserEngage
     end
 
     # Private: This parses given responses body's JSON,
-    # sets the collectionss attributes from that
+    # sets the collection attributes from that
     # JSON response and transform the results array
     # to a collection of base_class instances.
     #
