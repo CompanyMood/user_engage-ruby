@@ -40,7 +40,7 @@ RSpec.describe UserEngage::ResourceCollection, vcr: { record: :new_episodes } do
       context 'there are no more pages (previous link is not present)' do
         before { subject.attributes[:previous] = nil }
 
-        it 'raises an NoPreviousPageAvailableException' do
+        it 'raises a NoPreviousPageAvailableException' do
           expect { subject.go_previous! }
             .to raise_error(UserEngage::NoPreviousPageAvailableException)
         end
