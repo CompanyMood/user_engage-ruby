@@ -24,6 +24,7 @@ module UserEngage
     attribute :browser_language, Types::String
     attribute :chat_id, Types::Integer
     attribute :city, Types::String
+    attribute :companies, Types::Array.of(UserEngage::Company)
     attribute :country, Types::String
     attribute :created_at, Types::DateTime
     attribute :email, Types::String
