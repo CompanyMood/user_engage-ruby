@@ -4,6 +4,7 @@ require 'bundler/setup'
 require 'dotenv/load'
 require 'user_engage'
 require 'webmock/rspec'
+require 'pry'
 
 require 'support/vcr_config'
 
