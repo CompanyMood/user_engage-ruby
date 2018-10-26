@@ -11,6 +11,38 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
     end
   end
 
+  describe '#all' do
+    subject { described_class.all }
+
+    context 'with an successful request', vcr: { cassette_name: :found_all } do
+      it 'should return a resource collection' do
+        expect(subject).to be_a(UserEngage::ResourceCollection)
+      end
+
+      context 'the resource collection' do
+        it 'should have set a base_class' do
+          expect(subject.base_class).to eq(UserEngage::User)
+        end
+
+        it 'should have the current_page on 1' do
+          expect(subject.current_page).to eq(1)
+        end
+
+        it 'should have set the correct meta informations' do
+          expect(subject.count).to eq(111)
+          expect(subject.next).to eq('https://app.userengage.com/api/public/users/?page=2')
+          expect(subject.previous).to eq(nil)
+        end
+
+        it 'should include the result resources' do
+          expect(subject.results).to be_a(Array)
+          expect(subject.results.size).to eq(1)
+          expect(subject.results.first).to be_a(UserEngage::User)
+        end
+      end # context 'the resource collection'
+    end # context 'with an successful request'
+  end # describe '#all'
+
   describe '#find' do
     context 'with valid find attribute', vcr: { cassette_name: :found_user } do
       subject { described_class.find(email: 'markus@company-mood.com') }

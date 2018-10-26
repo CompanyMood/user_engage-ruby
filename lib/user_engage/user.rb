@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'user_engage/base_model'
+require 'user_engage/operation/all'
 require 'user_engage/operation/find'
 require 'user_engage/operation/destroy'
 
@@ -13,6 +14,7 @@ module UserEngage
     ##############
     ## Includes ##
     ##############
+    extend Operation::All
     extend Operation::Find
     include Operation::Destroy
 
