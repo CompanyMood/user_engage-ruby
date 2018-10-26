@@ -5,6 +5,7 @@ require 'dotenv/load'
 require 'user_engage'
 require 'vcr'
 require 'webmock/rspec'
+require 'pry'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
