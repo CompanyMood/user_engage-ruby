@@ -2,6 +2,7 @@
 
 require 'user_engage/base_model'
 require 'user_engage/operation/all'
+require 'user_engage/operation/create'
 require 'user_engage/operation/find'
 require 'user_engage/operation/destroy'
 require 'user_engage/operation/update_attributes'
@@ -16,6 +17,7 @@ module UserEngage
     ## Includes ##
     ##############
     extend Operation::All
+    extend Operation::Create
     extend Operation::Find
     include Operation::Destroy
     include Operation::UpdateAttributes
@@ -72,6 +74,10 @@ module UserEngage
     #####################
     private_class_method def self.supported_find_params
       %i[email key phone_number date]
+    end
+
+    private_class_method def self.required_params
+      %i[email]
     end
   end
 end

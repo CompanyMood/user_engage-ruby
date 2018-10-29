@@ -2,6 +2,7 @@
 
 require 'user_engage/base_model'
 require 'user_engage/operation/all'
+require 'user_engage/operation/create'
 require 'user_engage/operation/find'
 require 'user_engage/operation/destroy'
 require 'user_engage/operation/update_attributes'
@@ -15,6 +16,7 @@ module UserEngage
     ##############
     extend Operation::All
     extend Operation::Find
+    extend Operation::Create
     include Operation::Destroy
     include Operation::UpdateAttributes
 
@@ -51,6 +53,10 @@ module UserEngage
     #####################
     private_class_method def self.supported_find_params
       []
+    end
+
+    private_class_method def self.required_params
+      %i[name]
     end
   end
 end
