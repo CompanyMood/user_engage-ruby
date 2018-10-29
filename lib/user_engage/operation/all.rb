@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'user_engage/resource_collection'
-require 'user_engage/errors'
 
 module UserEngage
   module Operation

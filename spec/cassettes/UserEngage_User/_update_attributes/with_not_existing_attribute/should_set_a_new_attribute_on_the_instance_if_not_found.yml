@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://app.userengage.com/api/public/users/72130530/set_multiple_attributes/
+    body:
+      encoding: UTF-8
+      string: '{"company_role":"supervisor"}'
+    headers:
+      User-Agent:
+      - UserEngage-Ruby/0.0.6
+      Authorization:
+      - Token <my-test-token>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 29 Oct 2018 15:42:11 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df3239822045f55cbb3ac7f6b81dd0b911540827731; expires=Tue, 29-Oct-19
+        15:42:11 GMT; path=/; domain=.userengage.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Allow:
+      - POST, OPTIONS
+      Vary:
+      - Cookie
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4716c0280ff76361-FRA
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 29 Oct 2018 15:42:11 GMT
+recorded_with: VCR 4.0.0
