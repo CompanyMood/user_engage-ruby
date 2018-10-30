@@ -29,6 +29,12 @@ module UserEngage
       request(:post, path, parameters)
     end
 
+    # Public: Calls the base_url with the given path and parameters
+    #
+    def put(path, parameters = {})
+      request(:put, path, parameters)
+    end
+
     #####################
     ## Private methods ##
     #####################

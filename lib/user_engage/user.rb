@@ -5,6 +5,7 @@ require 'user_engage/operation/all'
 require 'user_engage/operation/create'
 require 'user_engage/operation/find'
 require 'user_engage/operation/destroy'
+require 'user_engage/operation/update'
 require 'user_engage/operation/update_attributes'
 
 require 'user_engage/attribute'
@@ -20,6 +21,7 @@ module UserEngage
     extend Operation::Create
     extend Operation::Find
     include Operation::Destroy
+    include Operation::Update
     include Operation::UpdateAttributes
 
     ################
