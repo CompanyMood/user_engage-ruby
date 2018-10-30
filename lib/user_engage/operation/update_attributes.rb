@@ -6,7 +6,7 @@ require 'user_engage/errors'
 module UserEngage
   module Operation
     module UpdateAttributes
-      # Public: Updates attributes of the ressource
+      # Public: Updates attributes of the resource
       #
       # Params: attributes - A hash where
       # the key is the name_std of the attribute to set and
