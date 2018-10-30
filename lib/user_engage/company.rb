@@ -8,6 +8,7 @@ require 'user_engage/operation/destroy'
 require 'user_engage/operation/update_attributes'
 
 require 'user_engage/attribute'
+require 'user_engage/tag'
 
 module UserEngage
   class Company < BaseModel
@@ -39,6 +40,7 @@ module UserEngage
     attribute :phone_numbers, Types::Coercible::Array.of(Types::String)
     attribute :postal_code, Types::String
     attribute :region, Types::String
+    attribute :tags, Types::Coercible::Array.of(UserEngage::Tag)
     attribute :updated_at, Types::DateTime
 
     ###################
