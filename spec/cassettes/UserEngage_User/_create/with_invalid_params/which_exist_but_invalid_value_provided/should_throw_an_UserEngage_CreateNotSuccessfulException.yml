@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://app.userengage.com/api/public/users/
+    body:
+      encoding: UTF-8
+      string: '{"email":"specs@company-mood.com","gender":"invalid"}'
+    headers:
+      User-Agent:
+      - UserEngage-Ruby/0.0.6
+      Authorization:
+      - Token <my-test-token>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 29 Oct 2018 20:07:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '60'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da14735ddc89955fb7b3e2fa61bdda0f61540843651; expires=Tue, 29-Oct-19
+        20:07:31 GMT; path=/; domain=.userengage.com; HttpOnly
+      Vary:
+      - Cookie
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      X-Frame-Options:
+      - SAMEORIGIN
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 471844d7ec22635b-FRA
+    body:
+      encoding: UTF-8
+      string: '{"errors":{"gender":["\"invalid\" is not a valid choice."]}}'
+    http_version: 
+  recorded_at: Mon, 29 Oct 2018 20:07:31 GMT
+recorded_with: VCR 4.0.0

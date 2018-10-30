@@ -1,6 +1,6 @@
 # Open ToDos:
 ## Users
-* [ ] Create user
+* [x] Create user
 * [ ] Update user
 * [x] Find user by email
 * [x] Find user by ID
@@ -24,7 +24,7 @@
 * [ ] Get user events
 * [ ] Get user emails
 ## CRM
-* [ ] Create company
+* [x] Create company
 * [ ] Update company
 * [x] Delete company
 * [x] Get company
