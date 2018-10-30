@@ -23,7 +23,7 @@ module UserEngage
       # Private: Sends the post request with the UE client
       # and returns the response
       #
-      def create_remote_resouce(attributes_hash)
+      def create_remote_resource(attributes_hash)
         path = "/#{resource_name}/"
         UserEngage.client.post(path, attributes_hash)
       end
