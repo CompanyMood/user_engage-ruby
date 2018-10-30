@@ -10,7 +10,7 @@ module UserEngage
       #
       def create(attributes_hash)
         check_for_required_params!(attributes_hash)
-        response = create_remote_resouce(attributes_hash)
+        response = create_remote_resource(attributes_hash)
         check_for_response_code!(response)
         construct_new_resource(response)
       end
