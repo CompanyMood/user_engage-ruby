@@ -21,7 +21,7 @@ module UserEngage
       private
 
       # Private: Sends the post request with the UE client
-      # and returns the reposne
+      # and returns the response
       #
       def create_remote_resouce(attributes_hash)
         path = "/#{resource_name}/"
