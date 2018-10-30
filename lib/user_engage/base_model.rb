@@ -11,5 +11,9 @@ module UserEngage
     transform_types do |type|
       type.meta(omittable: true)
     end
+
+    def resource_name
+      self.class.resource_name
+    end
   end
 end

@@ -3,6 +3,7 @@
 * [ ] Create user
 * [ ] Update user
 * [x] Find user by email
+* [x] Find user by ID
 * [x] Find user by key
 * [x] Find user by phone number
 * [x] Find user by date
@@ -15,25 +16,8 @@
 * [ ] Remove tag
 * [ ] Add list
 * [ ] Remove list
-* [ ] Set attribute
-* [ ] Set multiple attributes
-* [ ] Remove attribute
-* [ ] Get user ping hits
-* [ ] Get user timeline
-* [ ] Get user events
-* [ ] Get user emails
-## Users - custom ID requests
-* [ ] Update user
-* [ ] Find user by ID
-* [ ] Delete user
-* [ ] Get single user details
-* [ ] Get user segments
-* [ ] Add tag
-* [ ] Remove tag
-* [ ] Add list
-* [ ] Remove list
-* [ ] Set attribute
-* [ ] Set multiple attributes
+* [x] Set attribute
+* [x] Set multiple attributes
 * [ ] Remove attribute
 * [ ] Get user ping hits
 * [ ] Get user timeline
@@ -45,8 +29,8 @@
 * [x] Delete company
 * [x] Get company
 * [x] Get all companies
-* [ ] Set attribute
-* [ ] Set multiple attributes
+* [x] Set attribute
+* [x] Set multiple attributes
 * [ ] Update company using company ID
 * [ ] Delete company using company ID
 * [ ] Get company using company ID
@@ -57,7 +41,6 @@
 * [ ] Get deal
 * [ ] Get all deals
 * [ ] Set attribute
-* [ ] Set multiple attributes
 * [ ] Create activity
 * [ ] Update activity
 * [ ] Get activity

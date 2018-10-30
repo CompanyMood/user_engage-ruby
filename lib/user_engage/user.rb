@@ -4,6 +4,7 @@ require 'user_engage/base_model'
 require 'user_engage/operation/all'
 require 'user_engage/operation/find'
 require 'user_engage/operation/destroy'
+require 'user_engage/operation/update_attributes'
 
 require 'user_engage/attribute'
 require 'user_engage/list'
@@ -17,6 +18,7 @@ module UserEngage
     extend Operation::All
     extend Operation::Find
     include Operation::Destroy
+    include Operation::UpdateAttributes
 
     ################
     ## Attributes ##

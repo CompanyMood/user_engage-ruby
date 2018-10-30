@@ -50,7 +50,7 @@ http_interactions:
       string: '{"id":72130530,"key":"KSnAlOuWa","name":"Markus Schwed","email":"markus@company-mood.com","gender":"unknown","status":"user","phone_number":null,"first_seen":"2018-01-25T13:34:31.978138Z","last_seen":"2018-02-02T18:02:22.051644Z","page_views":49,"last_ip":"91.62.63.111","timezone":"Europe/Berlin","city":null,"region":null,"country":"Germany","unsubscribed":false,"browser_language":"en","score":0,"browser":"Firefox","os_type":"Mac
         OS X","resolution":"1920x1080","created_at":"2018-01-25T13:34:31.987595Z","updated_at":"2018-02-02T18:02:22.087045Z","attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
         11:45:35","id":286115,"description":"When has that user been created? (Self
-        or invited)"},{"name_std":"company_admin","name":"company_admin","value":"True","id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
+        or invited)"},{"name_std":"company_admin","name":"company_admin","value":true,"id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
         list","description":"A first list"}],"tags":[{"name":"CompanyMood team member",
         "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"chat_id":"Chat
         ID is deprecated and will be removed in future","last_contacted":"2018-01-29T12:51:45.079079Z","user_id":"26477314-a2e7-480f-438a-4de724267d21"}'
@@ -106,7 +106,7 @@ http_interactions:
       string: '{"id":72130530,"key":"gpHcuWmhu4eT","name":"Markus Schwed","email":"markus@company-mood.com","gender":"unknown","status":"user","phone_number":null,"first_seen":"2018-02-09T10:42:13.956452Z","last_seen":"2018-10-24T13:28:59.264665Z","page_views":1191,"last_ip":"91.67.113.209","timezone":"Europe/Kaliningrad","city":"Alzey","region":"Rheinland-Pfalz","country":"Germany","unsubscribed":false,"browser_language":"de","score":0,"browser":"Firefox","os_type":"Windows
         10","resolution":"1920x1080","created_at":"2018-02-09T10:42:13.979719Z","updated_at":"2018-10-24T13:28:59.269436Z","companies":[{"member_since":"2018-01-25T14:30:15.435527Z","id":120378,"name":"CompanyMood"}],"attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
         11:45:35","id":286115,"description":"When has that user been created? (Self
-        or invited)"},{"name_std":"company_admin","name":"company_admin","value":"True","id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
+        or invited)"},{"name_std":"company_admin","name":"company_admin","value":true,"id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
         list","description":"A first list"}],"gravatar_url":null,"tags":[{"name":"CompanyMood team member",
         "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}'
     http_version: 

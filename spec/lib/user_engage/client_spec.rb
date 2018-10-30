@@ -33,8 +33,26 @@ RSpec.describe UserEngage::Client do
     end # describe '#get'
 
     describe '#post' do
-      pending
-      it 'POST to public api with given path and parameters'
+      let(:params) { { company_admin: true, company_role: 'employee' } }
+
+      before do
+        stub_request(:post, 'https://app.userengage.com/api/public/users/111/set_multiple_attributes')
+        subject.post('/users/111/set_multiple_attributes', params)
+      end
+
+      it 'POST to public api with given path and parameters' do
+        expect(WebMock).to have_requested(
+          :post,
+          'https://app.userengage.com/api/public/users/111/set_multiple_attributes'
+        ).with(
+          body: params,
+          headers: {
+            Authorization: "Token #{token}",
+            'Content-Type' => 'application/json',
+            'User-Agent' => "UserEngage-Ruby/#{UserEngage::VERSION}"
+          }
+        ).once
+      end
     end # describe '#post'
 
     describe '#put' do
