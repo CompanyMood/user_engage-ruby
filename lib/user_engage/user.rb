@@ -25,12 +25,12 @@ module UserEngage
     ################
     ## Attributes ##
     ################
-    attribute :attributes, Types::Array.of(UserEngage::Attribute)
+    attribute :attributes, Types::Coercible::Array.of(UserEngage::Attribute)
     attribute :browser, Types::String
     attribute :browser_language, Types::String
     attribute :chat_id, Types::Integer
     attribute :city, Types::String
-    attribute :companies, Types::Array.of(UserEngage::Company)
+    attribute :companies, Types::Coercible::Array.of(UserEngage::Company)
     attribute :country, Types::String
     attribute :created_at, Types::DateTime
     attribute :email, Types::String
@@ -45,7 +45,7 @@ module UserEngage
     attribute :last_ip, Types::String
     attribute :last_seen, Types::DateTime
     attribute :linkedin_url, Types::String
-    attribute :lists, Types::Array.of(UserEngage::List)
+    attribute :lists, Types::Coercible::Array.of(UserEngage::List)
     attribute :name, Types::String
     attribute :notifications, Types::Bool
     attribute :os_type, Types::String
@@ -55,7 +55,7 @@ module UserEngage
     attribute :resolution, Types::String
     attribute :score, Types::Integer
     attribute :status, Types::String
-    attribute :tags, Types::Array.of(UserEngage::Tag)
+    attribute :tags, Types::Coercible::Array.of(UserEngage::Tag)
     attribute :timezone, Types::String
     attribute :twitter_url, Types::String
     attribute :unsubscribed, Types::Bool

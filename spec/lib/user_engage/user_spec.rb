@@ -39,6 +39,11 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
           expect(subject.results.size).to eq(1)
           expect(subject.results.first).to be_a(UserEngage::User)
         end
+
+        it 'should coerce nil on array correctly' do
+          expect(subject.results.first.tags).to be_a(Array)
+          expect(subject.results.first.tags).to be_empty
+        end
       end # context 'the resource collection'
     end # context 'with an successful request'
   end # describe '#all'
@@ -55,7 +60,7 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
 
       include_examples 'valid user find request'
 
-      it 'sets the correct tags' do
+      it 'sets the correct companies' do
         company = subject.companies.first
         expect(company).to be_a(UserEngage::Company)
         expect(company.name).to eq('CompanyMood')

@@ -52,8 +52,7 @@ http_interactions:
         10","resolution":"1920x1080","created_at":"2018-02-09T10:42:13.979719Z","updated_at":"2018-10-24T13:28:59.269436Z","companies":[{"member_since":"2018-01-25T14:30:15.435527Z","id":120378,"name":"CompanyMood"}],"attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
         11:45:35","id":286115,"description":"When has that user been created? (Self
         or invited)"},{"name_std":"company_admin","name":"company_admin","value":"True","id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
-        list","description":"A first list"}],"gravatar_url":null,"tags":[{"name":"CompanyMood
-        team member", "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}]}'
+        list","description":"A first list"}],"gravatar_url":null,"tags":null,"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}]}'
     http_version: 
   recorded_at: Thu, 25 Oct 2018 08:35:54 GMT
 - request:

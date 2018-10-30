@@ -25,7 +25,7 @@ module UserEngage
     ################
     attribute :address, Types::String
     attribute :approx_employees, Types::Integer
-    attribute :attributes, Types::Array.of(UserEngage::Attribute)
+    attribute :attributes, Types::Coercible::Array.of(UserEngage::Attribute)
     attribute :city, Types::String
     attribute :company_id, Types::Integer
     attribute :country, Types::String
@@ -36,7 +36,7 @@ module UserEngage
     attribute :id, Types::Integer
     attribute :member_since, Types::DateTime
     attribute :name, Types::String
-    attribute :phone_numbers, Types::Array.of(Types::String)
+    attribute :phone_numbers, Types::Coercible::Array.of(Types::String)
     attribute :postal_code, Types::String
     attribute :region, Types::String
     attribute :updated_at, Types::DateTime
