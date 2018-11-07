@@ -17,10 +17,10 @@ module UserEngage
       private
 
       def get_resource(params)
-        response = if params.is_a?(Integer)
-                     get_by_id(params)
-                   else
+        response = if params.is_a?(Hash)
                      get_by_hash(params)
+                   else
+                     get_by_id(params)
                    end
 
         check_for_existing_resource!(response, params)
