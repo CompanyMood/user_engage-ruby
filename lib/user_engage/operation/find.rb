@@ -47,9 +47,7 @@ module UserEngage
       end
 
       def check_for_unsupported_params!(params)
-        if params.is_a?(Integer)
-          true
-        else
+        if params.is_a?(Hash)
           unsupported_params = params.keys - supported_find_params
           return if unsupported_params.size.zero?
 
@@ -57,6 +55,8 @@ module UserEngage
             UserEngage::InvalidFindAttributeException,
             "Unsupported parameter/s used: #{unsupported_params.join(', ')}"
           )
+        else
+          true
         end
       end
     end
