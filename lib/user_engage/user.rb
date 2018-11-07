@@ -75,7 +75,7 @@ module UserEngage
     ## Private methods ##
     #####################
     private_class_method def self.supported_find_params
-      %i[email key phone_number date]
+      %i[email key phone_number date user_id]
     end
 
     private_class_method def self.required_params

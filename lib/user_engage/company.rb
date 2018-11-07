@@ -56,7 +56,7 @@ module UserEngage
     ## Private methods ##
     #####################
     private_class_method def self.supported_find_params
-      []
+      %i[company_id]
     end
 
     private_class_method def self.required_params
