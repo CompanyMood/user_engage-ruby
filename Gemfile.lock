@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    user_engage (0.0.9)
+    user_engage (0.0.10)
       dry-struct (~> 0.5)
       faraday (>= 0.12)
 
