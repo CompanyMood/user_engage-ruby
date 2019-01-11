@@ -33,7 +33,7 @@
 * [x] Set multiple attributes
 * [ ] Update company using company ID
 * [ ] Delete company using company ID
-* [ ] Get company using company ID
+* [x] Get company using company ID
 * [ ] Set attribute using company ID
 * [ ] Set multiple attributes using company ID
 * [ ] Create deal
