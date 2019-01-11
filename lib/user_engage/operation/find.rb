@@ -11,6 +11,11 @@ module UserEngage
         new(attributes)
       end
 
+      def find_by_id(id)
+        attributes = get_resource_by_id(id)
+        new(attributes)
+      end
+
       #####################
       ## Private methods ##
       #####################
@@ -24,6 +29,12 @@ module UserEngage
                    end
 
         check_for_existing_resource!(response, params)
+        JSON.parse(response.body, symbolize_names: true)
+      end
+
+      def get_resource_by_id(id)
+        path = "/#{resource_name}-by-id/#{id}/"
+        response = UserEngage.client.get(path)
         JSON.parse(response.body, symbolize_names: true)
       end
 

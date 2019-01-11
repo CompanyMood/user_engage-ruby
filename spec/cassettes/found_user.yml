@@ -107,8 +107,63 @@ http_interactions:
         10","resolution":"1920x1080","created_at":"2018-02-09T10:42:13.979719Z","updated_at":"2018-10-24T13:28:59.269436Z","companies":[{"member_since":"2018-01-25T14:30:15.435527Z","id":120378,"name":"CompanyMood"}],"attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
         11:45:35","id":286115,"description":"When has that user been created? (Self
         or invited)"},{"name_std":"company_admin","name":"company_admin","value":true,"id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
-        list","description":"A first list"}],"gravatar_url":null,"tags":[{"name":"CompanyMood team member",
-        "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}'
+        list","description":"A first list"}],"gravatar_url":null,"tags":[{"name":"CompanyMood
+        team member", "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}'
     http_version: 
   recorded_at: Wed, 24 Oct 2018 13:37:38 GMT
+- request:
+    method: get
+    uri: https://app.userengage.com/api/public/users-by-id/27879615-a2e7-480f-938e-4df724567d20/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - UserEngage-Ruby/0.0.12
+      Authorization:
+      - Token <my-test-token>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 11 Jan 2019 10:26:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da8fa53185153c20cbf9dbeb5fd942bde1547202380; expires=Sat, 11-Jan-20
+        10:26:20 GMT; path=/; domain=.userengage.com; HttpOnly
+      X-Frame-Options:
+      - SAMEORIGIN
+      Allow:
+      - GET, PUT, PATCH, DELETE, HEAD, OPTIONS
+      Vary:
+      - Cookie
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4976af403ad5c2a1-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":72130530,"key":"gpHcuWmhu4eT","name":"Markus Schwed","email":"markus@company-mood.com","gender":"unknown","status":"user","phone_number":null,"first_seen":"2018-02-09T10:42:13.956452Z","last_seen":"2018-10-24T13:28:59.264665Z","page_views":1191,"last_ip":"91.67.113.209","timezone":"Europe/Kaliningrad","city":"Alzey","region":"Rheinland-Pfalz","country":"Germany","unsubscribed":false,"browser_language":"de","score":0,"browser":"Firefox","os_type":"Windows
+        10","resolution":"1920x1080","created_at":"2018-02-09T10:42:13.979719Z","updated_at":"2018-10-24T13:28:59.269436Z","companies":[{"member_since":"2018-01-25T14:30:15.435527Z","id":120378,"name":"CompanyMood"}],"attributes":[{"name_std":"created_at","name":"created_at","value":"2015-03-13
+        11:45:35","id":286115,"description":"When has that user been created? (Self
+        or invited)"},{"name_std":"company_admin","name":"company_admin","value":true,"id":286120,"description":""}],"gravatar_url":null,"lists":[{"id":12342,"name":"General
+        list","description":"A first list"}],"gravatar_url":null,"tags":[{"name":"CompanyMood
+        team member", "id":9827}],"notifications":true,"facebook_url":null,"linkedin_url":null,"twitter_url":null,"google_url":null,"last_contacted":null,"user_id":"27879615-a2e7-480f-938e-4df724567d20"}'
+    http_version: 
+  recorded_at: Fri, 11 Jan 2019 10:26:18 GMT
 recorded_with: VCR 4.0.0

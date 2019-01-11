@@ -84,6 +84,14 @@ RSpec.describe UserEngage::User, vcr: { record: :new_episodes } do
     end # context 'with an invalid attribute'
   end # describe '#find
 
+  describe '#find_by_id' do
+    context 'with valid user_id', vcr: { cassette_name: :found_user } do
+      subject { described_class.find_by_id('27879615-a2e7-480f-938e-4df724567d20') }
+
+      include_examples 'valid user find request'
+    end # context 'with a valid find attribute'
+  end # describe '#find_by_id'
+
   describe '#destroy' do
     context 'with a not existing user' do
       let(:user) { described_class.new(id: 99922211) }
