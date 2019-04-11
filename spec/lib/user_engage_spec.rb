@@ -10,6 +10,7 @@ RSpec.describe UserEngage do
   it 'is possible to configure UserEngage' do
     described_class.config do |config|
       config.token = token
+      config.host = 'https://example.user.com'
     end
 
     expect(described_class.configuration.token).to eq(token)

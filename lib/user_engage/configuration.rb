@@ -2,6 +2,6 @@
 
 module UserEngage
   class Configuration
-    attr_accessor :token
+    attr_accessor :token, :host
   end
 end

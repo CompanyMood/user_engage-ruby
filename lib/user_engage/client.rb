@@ -72,7 +72,7 @@ module UserEngage
     end
 
     def host
-      'https://app.userengage.com/'
+      @configuration.host || 'https://app.userengage.com/'
     end
   end
 end

@@ -7,6 +7,7 @@ RSpec.describe UserEngage::Client do
     let(:configuration) do
       UserEngage::Configuration.new.tap do |config|
         config.token = token
+        config.host = 'https://app.userengage.com'
       end
     end
 
