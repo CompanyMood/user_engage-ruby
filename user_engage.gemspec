@@ -24,15 +24,15 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'dry-struct', '~> 0.5'
-  spec.add_runtime_dependency 'faraday', '>= 0.12'
+  spec.add_runtime_dependency 'dry-struct', '~> 1.1.1'
+  spec.add_runtime_dependency 'faraday', '>= 0.17'
 
-  spec.add_development_dependency 'bundler', '~> 1.16'
-  spec.add_development_dependency 'dotenv', '~> 2.2'
-  spec.add_development_dependency 'pry', '~> 0.11.3'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '~> 3.0'
-  spec.add_development_dependency 'rubocop', '~> 0.59'
-  spec.add_development_dependency 'vcr', '~> 4.0'
-  spec.add_development_dependency 'webmock', '~> 3.3'
+  spec.add_development_dependency 'bundler', '~> 2.0'
+  spec.add_development_dependency 'dotenv', '~> 2.7'
+  spec.add_development_dependency 'pry', '~> 0.12'
+  spec.add_development_dependency 'rake', '~> 13.0'
+  spec.add_development_dependency 'rspec', '~> 3.9'
+  spec.add_development_dependency 'rubocop', '~> 0.76'
+  spec.add_development_dependency 'vcr', '~> 5.0'
+  spec.add_development_dependency 'webmock', '~> 3.7'
 end
