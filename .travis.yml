@@ -1,7 +1,13 @@
 sudo: false
 language: ruby
-rvm:
-  - 2.6.5
+jobs:
+  include:
+    - rvm: 2.6.5
+      gemfile: Gemfile.ruby-2.6
+    - rvm: 2.5.7
+      gemfile: Gemfile.ruby-2.5
+    - rvm: 2.4.8
+      gemfile: Gemfile.ruby-2.4
 before_install:
   - gem install bundler
   - bin/setup
