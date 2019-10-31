@@ -5,12 +5,10 @@ require 'dry-struct'
 module UserEngage
   class BaseModel < Dry::Struct
     module Types
-      include Dry::Types.module
+      include Dry.Types(default: :nominal)
     end
 
-    transform_types do |type|
-      type.meta(omittable: true)
-    end
+    transform_types(&:omittable)
 
     def resource_name
       self.class.resource_name
