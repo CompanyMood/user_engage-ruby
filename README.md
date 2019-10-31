@@ -1,6 +1,6 @@
 # UserEngage [![Build Status](https://travis-ci.org/CompanyMood/user_engage-ruby.svg?branch=master)](https://travis-ci.org/CompanyMood/user_engage-ruby)
 
-This gem implements the ruby bindings for https://userengage.com.
+This gem implements the ruby bindings for https://user.com (former https://userengage.com)
 
 ## Current state
 By now, you're able to find and destroy users but functionality is very easy to add, as soon as all [operations](https://github.com/CompanyMood/user_engage-ruby/tree/master/lib/user_engage/operation) are implemented.
@@ -25,14 +25,16 @@ Or install it yourself as:
 
 ## Basic Usage
 
-NOTE: It's important to have access to the UserEngage API package.
+NOTE: It's important to have access to the User.com API package.
 
-First, setup your UserEngage configuration. 
-Get yourself an API access token [here](https://app.userengage.com/api/YVSXSB/credentials/) and set it like
+First, setup your User.com configuration.
+Get yourself an API access token and set the token and your applications
+user.com host like
 
 ```ruby
 UserEngage.config do |config|
   config.token = '<your-access-token-here>'
+  config.host = https://<your-custom-subdomain-host>.user.com'
 end
 ```
 
@@ -63,4 +65,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the UserEngage project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/user_engage/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the UserEngage project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/CompanyMood/user_engage/blob/master/CODE_OF_CONDUCT.md).
