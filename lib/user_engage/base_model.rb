@@ -8,9 +8,7 @@ module UserEngage
       include Dry.Types(default: :nominal)
     end
 
-    transform_types do |type|
-      type.omittable
-    end
+    transform_types(&:omittable)
 
     def resource_name
       self.class.resource_name
